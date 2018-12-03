@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "677854913656",
+    "firebase_url": "https://keeva-dfeca.firebaseio.com",
+    "project_id": "keeva-dfeca",
+    "storage_bucket": "keeva-dfeca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:677854913656:android:7ce538db0a84bea7",
+        "android_client_info": {
+          "package_name": "com.snyper.keeva"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "677854913656-0u0lod9t6cm4sj9ucpoduleqh22hb6mt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.snyper.keeva",
+            "certificate_hash": "92160f052d85e9c7193d88a7173993e0a060086d"
+          }
+        },
+        {
+          "client_id": "677854913656-anafqkd399gffhdrqkbd9h873s09jkm8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEGL0bwnj0p78VLIE7vzYBWa-ZTQJFXAQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "677854913656-anafqkd399gffhdrqkbd9h873s09jkm8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

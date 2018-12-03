@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">keeva</string>
+    <string name="title_activity_home">Home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="facebook_app_id">194572334665909</string>
+    <string name="facebook_login_protocol_name">fb194572334665909</string>
+    <string name="account_kit_client_token">5625a1b5dc66b32166540b94ac1fc4a7</string>
+
+</resources>

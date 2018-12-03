@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+
+    tools:context="com.snyper.keeva.UserName">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:id="@+id/edtHomeAddress"
+            android:hint="Enter your username here..."
+            android:inputType="textPersonName"
+            android:text=""
+            android:textSize="24sp"
+            android:textStyle="italic"
+            android:textColor="@color/txtcolorOne"
+            android:textColorHint="@color/txtcolortwo"
+            app:met_primaryColor="@color/txtcolorOne"
+            app:met_floatingLabel="highlight"
+            app:met_baseColor="@color/txtcolorOne"
+            app:met_singleLineEllipsis="true"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:textSize="20sp"
+            android:textColor="@color/txtcolorOne"
+            android:text="Your name will appear when you making orders"/>
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/mandem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/btnSignUp"
+        android:backgroundTint="@color/btnSignUp"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_arrow_forward_white_24dp"
+        app:useCompatPadding="true" />
+
+</RelativeLayout>

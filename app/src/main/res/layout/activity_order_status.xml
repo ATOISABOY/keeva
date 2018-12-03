@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrnd"
+    tools:context="com.snyper.keeva.OrderStatus">
+
+    <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listOrders"
+
+        app:shimmer_demo_grid_child_count="2"
+        app:shimmer_demo_layout="@layout/order_layout"
+        app:shimmer_demo_layout_manager_type="linear_vertical"
+        app:shimmer_demo_angle="15"
+        android:background="@android:color/transparent">
+
+    </com.cooltechworks.views.shimmer.ShimmerRecyclerView>
+
+</RelativeLayout>
