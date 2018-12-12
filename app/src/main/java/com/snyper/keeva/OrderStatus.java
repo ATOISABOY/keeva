@@ -1,6 +1,7 @@
 package com.snyper.keeva;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,6 +18,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.snyper.keeva.Common.Common;
+import com.snyper.keeva.Interface.ItemClickListener;
 import com.snyper.keeva.ViewHolder.FoodViewHolder;
 import com.snyper.keeva.ViewHolder.OrderViewHolder;
 import com.snyper.keeva.model.Food;
@@ -67,8 +69,9 @@ public class OrderStatus extends AppCompatActivity {
         if(getIntent()==null){
             loadOrders(Common.currentUser.getPhone());
             recyclerView.hideShimmerAdapter();}
-        else
-            loadOrders(getIntent().getStringExtra("userPhone"));
+            else
+                loadOrders(getIntent().getStringExtra("userPhone"));
+
     }
 
 
@@ -89,6 +92,14 @@ public class OrderStatus extends AppCompatActivity {
                 viewHolder.txtOrderAdress.setText(model.getAddress());
                 viewHolder.txtOrderPhone.setText(model.getPhone());
                 viewHolder.txtOrderDate.setText(Common.getDate(Long.parseLong(adapter.getRef(position).getKey())));
+
+                viewHolder.setItemClickListener(new ItemClickListener() {
+                    @Override
+                    public void onClick(View view, int position, boolean isLongClick) {
+                        Common.currentKey=adapter.getRef(position).getKey();
+                        startActivity(new Intent(OrderStatus.this,TrackingOrder.class));
+                    }
+                });
             }
 
             @Override

@@ -23,6 +23,8 @@ import java.util.Locale;
 
 public class Common {
     public static User currentUser;
+
+    public static String currentKey;
     public static String topicName="News";
     public static String PHONE_TEXT="userPhone";
     public static final String INTENT_FOOD_ID="FoodId";
@@ -44,16 +46,16 @@ public class Common {
     public  static final String PWD_KEY="Password";
 
 
-    public static String convertCodeToStatus(String status) {
-        if ("0".equals(status))
+    public static String convertCodeToStatus(String code){
+        if (code.equals("0"))
             return "Placed";
-        else if ("1".equals(status))
+        else if (code.equals("1"))
             return "On my way";
+        else if (code.equals("2"))
+            return "Shipping";
         else
             return "Shipped";
-
     }
-
 
     public static boolean isConnectedToInternet(Context context){
         ConnectivityManager connectivityManager=(ConnectivityManager)context.getSystemService(Context.CONNECTIVITY_SERVICE);

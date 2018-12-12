@@ -77,7 +77,10 @@
         <activity android:name=".SearchActivity" />
         <activity android:name=".FavoritesActivity" />
         <activity android:name=".UserName" />
-        <activity android:name=".ShipperManagement"></activity>
+        <activity android:name=".ShipperManagement" />
+        <activity
+            android:name=".TrackingOrder"
+            android:label="@string/title_activity_tracking_order"></activity>
     </application>
 
 </manifest>
