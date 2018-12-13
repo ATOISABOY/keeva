@@ -2,6 +2,7 @@ package com.snyper.keeva.ViewHolder;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.snyper.keeva.Interface.ItemClickListener;
@@ -17,6 +18,8 @@ public TextView txtOrderId,txtOrderStatus,txtOrderPhone,txtOrderAdress,txtOrderD
 
 private ItemClickListener itemClickListener;
 
+public ImageView btn_delete;
+
     public OrderViewHolder(View itemView) {
         super(itemView);
         txtOrderAdress=(TextView) itemView.findViewById(R.id.order_address);
@@ -24,6 +27,7 @@ private ItemClickListener itemClickListener;
         txtOrderStatus=(TextView) itemView.findViewById(R.id.order_status);
         txtOrderPhone=(TextView) itemView.findViewById(R.id.order_phone);
         txtOrderDate=(TextView) itemView.findViewById(R.id.order_date);
+        btn_delete=(ImageView)itemView.findViewById(R.id.btn_delete);
 
        itemView.setOnClickListener(this);
 
